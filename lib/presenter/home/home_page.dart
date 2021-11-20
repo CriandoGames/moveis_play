@@ -41,13 +41,17 @@ class HomePage extends GetView<HomeController> {
           switch (settings.name) {
             case '/movies':
               return GetPageRoute(
-                  settings: settings, page: () => const MoveisPage(), binding: MoviesBindng());
+                  settings: settings,
+                  page: () => const MoveisPage(),
+                  binding: MoviesBindng());
             case '/favorite':
               return GetPageRoute(
                   settings: settings, page: () => const FavoritePage());
             default:
               return GetPageRoute(
-                  settings: settings, page: () => const MoveisPage());
+                  settings: settings,
+                  page: () => const MoveisPage(),
+                  binding: MoviesBindng());
           }
         },
       ),

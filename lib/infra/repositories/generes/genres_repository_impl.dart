@@ -16,6 +16,7 @@ class GenresRepositoryImpl implements GenresRepository {
       '/genre/movie/list',
       query: {
         'api_key': RemoteConfig.instance.getString('api_token'),
+        'language': 'pt-br',	
       },
     );
 

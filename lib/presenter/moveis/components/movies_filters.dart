@@ -13,8 +13,13 @@ class MoviesFilters extends GetView<MoviesController> {
       padding: const EdgeInsets.only(top: 16),
       scrollDirection: Axis.horizontal,
       child: Obx(() => Row(
-            children:
-                controller.listGenres.map((genre) => FilterTag(title: genre.name,)).toList(),
+            children: controller.listGenres
+                .map((genre) => FilterTag(
+                      genre: genre,
+                      onTap: () => controller.filterMoviesByGenre(genre),
+                      selected: controller.genreSelected.value?.id == genre.id,
+                    ))
+                .toList(),
           )),
     );
   }

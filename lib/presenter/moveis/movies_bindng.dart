@@ -3,6 +3,7 @@ import 'package:the_movies/infra/repositories/generes/genres_repository.dart';
 import 'package:the_movies/infra/repositories/generes/genres_repository_impl.dart';
 import 'package:the_movies/infra/services/genres/genre_services.dart';
 import 'package:the_movies/infra/services/genres/genre_services_impl.dart';
+import 'package:the_movies/infra/services/movies/movies_services.dart';
 import 'package:the_movies/infra/shared/rest_client/rest_client.dart';
 import 'package:the_movies/presenter/moveis/movies_controller.dart';
 
@@ -15,7 +16,8 @@ class MoviesBindng implements Bindings {
     Get.lazyPut<GenreServices>(
         () => GenreServicesImpl(genreRepository: Get.find<GenresRepository>()));
 
-    Get.lazyPut<MoviesController>(
-        () => MoviesController(genreServices: Get.find<GenreServices>()));
+    Get.put<MoviesController>(MoviesController(
+        genreServices: Get.find<GenreServices>(),
+        moviesServices: Get.find<MoviesServices>()));
   }
 }
