@@ -13,7 +13,7 @@ import 'package:the_movies/infra/shared/user/auher_user_service.dart';
 class ApplicationBindings implements Bindings {
   @override
   void dependencies() {
-    Get.lazyPut(() => RestClient());
+    Get.lazyPut(() => RestClient(), fenix: true);
     Get.lazyPut<AuthRepository>(() => AuthRepositoryImpl(), fenix: true);
     Get.lazyPut<AuthServices>(
         () => AuthServicesImpl(authRepository: Get.find<AuthRepository>()),
@@ -27,6 +27,6 @@ class ApplicationBindings implements Bindings {
             MoviesServicesImpl(moviesRepository: Get.find<MoviesRepository>()),
         fenix: true);
 
-    Get.put(AuherUserService().init());
+    Get.put(AuherUserService().init(), permanent: true);
   }
 }

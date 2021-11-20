@@ -1,16 +1,36 @@
-# the_movies
+<h1 align="center">All Validations BR</h1>
 
-A new Flutter project.
+## Descrição do Projeto
 
-## Getting Started
+- TheMovie App feito para estudo  é uma solução vê catalogos de filmes.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+### 🛠 Tecnologias
+- [Flutter](https://flutter.dev/)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<a href="###">
+ <img style="border-radius: 50%;" src=(./01.png) width="512px;" alt=""/>
+ <a href="###">
+ <img style="border-radius: 50%;" src=(./02.png) width="512px;" alt=""/>
+ <a href="###">
+ <img style="border-radius: 50%;" src=(./03.png) width="512px;" alt=""/>
+ <a href="###">
+ <img style="border-radius: 50%;" src=(./01.png) width="512px;" alt=""/>
+
+### Autores
+---
+Feito com ❤️ por 
+
+<a href="###">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/14837643?s=96&v=4" width="100px;" alt=""/>
+
+ 
+
+  <sub><b>Carlos Castro</b></sub></a> <a href="###" title="">🚀</a>
+
+
+  
+  ## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
