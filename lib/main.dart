@@ -8,6 +8,7 @@ import 'package:the_movies/presenter/login/login_module.dart';
 import 'package:the_movies/presenter/splash/splash_module.dart';
 
 import 'infra/shared/bindings/application_bindings.dart';
+import 'presenter/movie_detail/movie_detail_module.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,9 +27,12 @@ class MyApp extends StatelessWidget {
       title: AppUiConfig.title,
       theme: AppUiConfig.theme,
       initialBinding: ApplicationBindings(),
-      getPages: [...SplashModule().routes,
-       ...LoginModule().routes,
-       ...HomeModule().routes],
+      getPages: [
+        ...SplashModule().routes,
+        ...LoginModule().routes,
+        ...HomeModule().routes,
+        ...MovieDetailModule().routes,
+      ],
     );
   }
 }
